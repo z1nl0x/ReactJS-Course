@@ -1,4 +1,4 @@
-# Seção 03, 04, 05 - Projeto Gerenciador de Despesas
+# Seção 03 "React Básico e Trabalhando com Componentes", 04 "Estados em React e Trabalhando com Eventos", 05 "Renderizando Listas e Conteúdo Condicional" - Projeto Gerenciador de Despesas
 
 ### É preciso ter a versão LTS do NodeJS instalado na máquina antes de todo o procedimento daqui descrito - ultima versão LTS até o momento da finalização deste projeto é (16.17.0)
 
