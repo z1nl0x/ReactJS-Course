@@ -4,14 +4,14 @@ import classes from "./MealsSummary.module.css";
 const MealsSummary = () => {
   return (
     <section className={classes.summary}>
-      <h2>Delicious Food, Delivered to You</h2>
+      <h2>Cardápio Maravilhoso, Entregue até Você!</h2>
       <p>
-        Choose your favorite meal from our broad selection of available meals
-        and enjoy a delicious lunch or dinner at home.
+        Escolha seu prato favorito de nossa seleção de pratos e aproveite um
+        delicioso almoço ou jantar em sua casa.
       </p>
       <p>
-        All our meals are cooked with high-quality ingredients, just-in-time and
-        of course by experienced chefs!
+        Todos os nossos pratos são cozinhados com ingredientes de alta
+        qualidade, no tempo certo e claro por nossos experientes Chefs!
       </p>
     </section>
   );
