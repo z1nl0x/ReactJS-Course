@@ -1,4 +1,4 @@
-# Seção 12 "Olhando o funcionamento interno do React e Técnicas de Otimizações" - Projeto App Genérico
+# Seção 12 "Olhando o funcionamento interno do React e Técnicas de Otimização" - Projeto App Genérico
 
 ### É preciso ter a versão LTS do NodeJS instalado na máquina antes de todo o procedimento daqui descrito - ultima versão LTS até o momento da finalização deste projeto é (16.17.0)
 
