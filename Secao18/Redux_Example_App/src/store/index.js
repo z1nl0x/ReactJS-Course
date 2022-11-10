@@ -2,33 +2,15 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 import { createStore } from "redux";
 
+import counterReducer from "../store/counter-slice";
+import authReducer from "../store/auth-slice";
+
 export const INCREMENT = "increment";
-
-const initialState = { counter: 0, showCounter: true };
-
-const counterSlice = createSlice({
-  name: "counter",
-  initialState: initialState,
-  reducers: {
-    increment(state) {
-      state.counter++;
-    },
-    decrement(state) {
-      state.decrement--;
-    },
-    increase(state, action) {
-      state.counter = state.counter + action.incrementNumber;
-    },
-    toggleCounter(state) {
-      state.showCounter = !state.showCounter;
-    },
-  },
-});
 
 const store = configureStore({
   /* A way of declaring many more reducers if we have it more than one*/
   // reducer: { counter: counterSlice.reducer },
-  reducer: counterSlice.reducers,
+  reducer: { counter: counterReducer, auth: authReducer },
 });
 
 // This is the way of using redux without the reduxjs toolkit!
