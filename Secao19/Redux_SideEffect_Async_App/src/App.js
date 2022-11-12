@@ -31,7 +31,9 @@ function App() {
       return;
     }
 
-    dispatch(sendCartData(cart));
+    if (cart.changed) {
+      dispatch(sendCartData(cart));
+    }
   }, [cart, dispatch]);
 
   // Using useEffect inside of this component to make changes on the Redux global state using http requests to fetch data.

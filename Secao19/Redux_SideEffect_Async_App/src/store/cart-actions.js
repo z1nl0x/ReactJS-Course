@@ -5,10 +5,7 @@ export const fetchCartData = () => {
   return async (dispatch) => {
     const fetchData = async () => {
       const response = await fetch(
-        "https://react-http-17ddb-default-rtdb.firebaseio.com/cart.json",
-        {
-          method: "GET",
-        }
+        "https://react-http-17ddb-default-rtdb.firebaseio.com/cart.json"
       );
 
       if (!response.ok) {
@@ -22,7 +19,14 @@ export const fetchCartData = () => {
 
     try {
       const cartData = await fetchData();
-      dispatch(cartActions.replaceCart(cartData));
+
+      dispatch(
+        cartActions.replaceCart({
+          items: cartData.items || [],
+          totalQuantity: cartData.totalQuantity,
+          totalAmount: cartData.totalAmount,
+        })
+      );
     } catch (error) {
       dispatch(
         uiActions.showNotification({
