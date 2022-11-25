@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 let globalState = {};
 let listeners = [];
@@ -23,7 +23,7 @@ export const useStore = (shouldListen = true) => {
 
     return () => {
       if (shouldListen) {
-        listeners = listeners.filter((li) => li !== setState);
+        listeners = listeners.filter(li => li !== setState);
       }
     };
   }, [setState, shouldListen]);
@@ -34,6 +34,6 @@ export const useStore = (shouldListen = true) => {
 export const initStore = (userActions, initialState) => {
   if (initialState) {
     globalState = { ...globalState, ...initialState };
-    actions = { ...actions, ...userActions };
   }
+  actions = { ...actions, ...userActions };
 };
