@@ -1,4 +1,4 @@
-# Seção 24 "Animando plaicações ReactJS" - Projeto Animation App
+# Seção 24 "Animando aplicações ReactJS" - Projeto Animation App
 
 ### É preciso ter a versão LTS do NodeJS instalado na máquina antes de todo o procedimento daqui descrito - ultima versão LTS até o momento da finalização deste projeto é (16.17.0)
 
